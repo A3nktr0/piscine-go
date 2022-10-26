@@ -1,0 +1,1 @@
+curl -s https://zone01normandie.org/api/graphql-engine/v1/graphql --data '{"query":"{user(where:{login:{_eq:\"qdelooze\"}}){id}}"}' | sed 's/}/:/g' | cut -d ':' -f4
