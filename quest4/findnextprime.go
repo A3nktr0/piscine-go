@@ -2,8 +2,8 @@ package piscine
 
 func FindNextPrime(nb int) int {
 	found := false
-	next := nb
-	if nb >= -1000000087 && nb <= 1000000087 {
+	next := 2
+	if nb > 0 {
 		if IsPrime(nb) {
 			return nb
 		} else {
@@ -15,5 +15,3 @@ func FindNextPrime(nb int) int {
 	}
 	return next
 }
-
-// FindNextPrime(1000000088) == 1000000088 instead of 1000000093
