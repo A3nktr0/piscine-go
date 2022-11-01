@@ -1,14 +1,27 @@
 package piscine
 
 func IsPrime(nb int) bool {
-	if nb < 2 {
+	if nb < 2 || nb > 2 && nb%2 == 0 {
 		return false
 	}
-	temp := 0
-	for i := 2; i <= nb/2; i++ {
+	for i := 3; i <= nb/2; i = i + 2 {
 		if nb%i == 0 {
-			temp++
+			return false
 		}
 	}
-	return temp == 0
+	return true
 }
+
+// func IsPrime(nb int) bool {
+// 	if nb == 2 {
+// 		return true
+// 	}
+// 	if nb < 2 || nb%2 == 0 && nb > 2 {
+// 		return false
+// 	}
+// 	for i := 3; i < nb/2; i += 2 {
+// 		if nb%i == 0 {
+// 			return false
+// 		}
+// 	}
+// 	return true
