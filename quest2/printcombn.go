@@ -17,7 +17,7 @@ func PrintCombN(n int) {
 			for j := i + 1; j <= '9'; j++ {
 				z01.PrintRune(i)
 				z01.PrintRune(j)
-				if i != 8 || j != '9' {
+				if i != '8' || j != '9' {
 					z01.PrintRune(',')
 					z01.PrintRune(' ')
 				}
