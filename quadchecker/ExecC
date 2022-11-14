@@ -1,0 +1,1 @@
+go run ./quadC/quadc.go $1 $2

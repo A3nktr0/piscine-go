@@ -1,0 +1,1 @@
+go run ./quadE/quade.go $1 $2
